@@ -6,11 +6,13 @@
         <listener class-name="com.qa.listeners.ExtendReportListeners"/>
     </listeners>
     <test name="Open cart HomePage">
+        <parameter name="browser" value="Chrome"/>
         <classes>
             <class name="com.qa.opencart.tests.HomePageTest"/>
         </classes>
     </test>
     <test name="Open cart LoginPage">
+        <parameter name="browser" value="firefox"/>
         <classes>
             <class name="com.qa.opencart.tests.LoginPageTest"/>
         </classes>

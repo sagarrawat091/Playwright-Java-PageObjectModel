@@ -1,10 +1,9 @@
 package com.qa.opencart.tests;
 
-import com.microsoft.playwright.Browser;
-import com.microsoft.playwright.BrowserContext;
+
 import com.microsoft.playwright.Page;
-import com.microsoft.playwright.Playwright;
-import com.qa.factory.PlaywrightFactory;
+
+import com.qa.factory.*;
 import com.qa.pages.HomePage;
 import com.qa.pages.LoginPage;
 import org.testng.annotations.AfterTest;
@@ -27,7 +26,7 @@ public class BaseTest {
     {
         playwrightFactory=new PlaywrightFactory();
         prop=playwrightFactory.init_prop();
-        if(!browserName.contains(null))
+        if(!browserName.contains(""))
         {
             prop.setProperty("browser",browserName);
         }else {

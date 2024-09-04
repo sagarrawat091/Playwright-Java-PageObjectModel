@@ -1,0 +1,5 @@
+com\qa\pages\LoginPage.class
+com\qa\appConstants\AppConstants.class
+com\qa\listeners\ExtendReportListeners.class
+com\qa\pages\HomePage.class
+com\qa\factory\PlaywrightFactory.class
